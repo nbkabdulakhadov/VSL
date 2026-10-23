@@ -6,11 +6,6 @@
     <RootNamespace>VSL</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <!-- An IDE's oldest objects come and go (answers, query results, logs): without this the GC keeps their free
-         space, which was more than half of a day's heap; with it, it compacts the heap when that much is free. -->
-    <RuntimeHostConfigurationOption Include="System.GC.ConserveMemory" Value="5" />
-  </ItemGroup>
-  <ItemGroup>
     <InternalsVisibleTo Include="VSL.Tests" />
     <AvaloniaResource Include="Assets\**" Exclude="Assets\MaterialIcons\**" />
     <!-- Database Explorer (from Bengine Data Studio): its icons and SQL / Mongo shell highlighting. -->
